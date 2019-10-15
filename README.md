@@ -4,7 +4,7 @@ Click Through Rate Prediction using Taobao Dataset
 ## Objectives
 The objective of the project is to create a classification model to predict the click through rate based on the data from the website of Taobao for 8 days of ad impression / click logs.
 
-# Data Source(s)
+## Data Source(s)
 Ad impression/click logs for 1.1 million users from May 5th 2017 to May 13th 2017, involving 0.8 million ads
 User behavior logs dataset for 22 days includes 723 million entries for the behavior of the users covered in the ad impression/click logs https://tianchi.aliyun.com/dataset/dataDetail?dataId=56
 
