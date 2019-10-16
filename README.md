@@ -56,7 +56,7 @@ Click through rate is the ratio of the number of clicks to the number of views a
 In order to predict the possibility of whether a user will click an ad, we need to select features with predictive power from our dataset. 
 
 From the plot below, we see the distributions of the features 'shopping_level' and 'occupation' for the two groups (click and no-click) are highly overlapped.
-# ![layers](Visualization/Distribution_of_Features_in_clk_noclk_groups.png)
+# ![layers]()
 
 ### Chi-square test
 In addition to the analysis above, we performed chi-square test for the feature selection. Based on the test, we will select features with a p_value less than 0.05, which includes 11 features - 'adgroup_id', 'pid', 'cate_id', 'campaign_id', 'customer', 'brand' 'cms_segid', 'cms_group_id', 'final_gender_code', 'age_level' and 'hour'.
