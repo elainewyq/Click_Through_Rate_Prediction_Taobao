@@ -40,7 +40,6 @@ Below is the data struction:
 </p>
 
 ## Data Analysis
-The EDA is performed based on one day's data, which is from 2017-05-05 16:00:00 to 2017-05-06 15:59:46. It contains 3.3 million impression/click logs, invloving 383,353 users and 366,284 ads. Please be aware, the analysis below is for one day only (e.g. the views per user mean how many views a user has in one day)
 
 ### Page views per user
 The distribution of page views per user is right skewed. On average, a user has 23 page views, while the median of page views is 7. The data indicates 87% of the users have less than 8 page views. In addition, we group the dataset by 'user id' and 'adgroup id', and find 22% of a user-adgroup combination is repeated, which means some users have visited a page for more than one time.
