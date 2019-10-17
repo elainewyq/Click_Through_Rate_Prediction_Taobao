@@ -2,11 +2,11 @@
 Click Through Rate Prediction using Taobao Dataset 
 
 ## Objectives
-Online advertising is dominant in marketing in this digital world. Click through rate is the ratio of clicks on a specific ad to the total number of views, which is a very important metric to evaluate ad performance. The objective of the project is to predict the probability of a user to click the displayed ad when the user is visiting a page. 
+Online advertising is dominant in marketing in this digital world. Click through rate is the ratio of clicks on a specific ad to the total number of views, which is a very important metric to evaluate ad performance. The objective of the project is to predict the probability of whether an user will click the displayed ad when the user is visiting a page. 
 
 ## Data Source
 The data is from the website of Taobao for 8 days of ad impression / click logs. The ad impression/click logs for 1.1 million users is from 2017-05-05 16:00:00 to 2017-05-13 15:59:46, involving 0.8 million ads.
-User behavior logs dataset covers all the involved 1.1 million users' behavior history for 22 days, and includes 723 million entries in total. Link to data https://tianchi.aliyun.com/dataset/dataDetail?dataId=56
+User behavior logs dataset covers all the involved 1.1 million users' behavior history for the 22 days prior to 2017-5-13, and includes 723 million entries in total. Link to data https://tianchi.aliyun.com/dataset/dataDetail?dataId=56
 
 ### Data Schema
 
@@ -40,16 +40,17 @@ Below is the data struction:
 </p>
 
 ## Data Analysis
-The EDA is performed based on one day's data, which is from 2017-05-05 16:00:00 to 2017-05-06 15:59:46. It contains 3.3 million impression/click logs, invloving 383,353 users and 366,284 ads.
+The EDA is performed based on one day's data, which is from 2017-05-05 16:00:00 to 2017-05-06 15:59:46. It contains 3.3 million impression/click logs, invloving 383,353 users and 366,284 ads. Please be aware, the analysis below is for one day only (e.g. the views per user mean how many views a user has in one day)
 
 ### Page views per user
-The distribution of page views per user shown below is right skewed. On average, a user has 8.5 page views, while the median of page views is 3. The data indicates 84% of the users have less than 10 page views. In addition, we group the dataset by 'user id' and 'adgroup id', and find 1% of a user-adgroup combination is repeated, which means some users have visited a page for more than one time.
+The distribution of page views per user is right skewed. On average, a user has 8.5 page views, while the median of page views is 3. The data indicates 90% of the users have less than 8 page views. In addition, we group the dataset by 'user id' and 'adgroup id', and find 1% of a user-adgroup combination is repeated, which means some users have visited a page for more than one time.
 <p align="center">
   <image src=Visualization/DistributionOfViewsPerUser.png />
 </p>
 
+
 ### Views per ad
-The distribution of page views per ad shown below is also right skewed, with a average reviews of 8.9 and a median of 2. It shows that 84% of the ads get less than 10 views. 
+The distribution of page views per ad is also right skewed, with a average reviews of 8.9 and a median of 2. It shows that 90% of the ads get less than 20 views. 
 <p align="center">
   <image src=Visualization/DistributionOfViewsPerAd.png />
 </p>
