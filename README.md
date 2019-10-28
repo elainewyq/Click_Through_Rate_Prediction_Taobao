@@ -114,7 +114,7 @@ Below is the distribution of the conversion rate of each brand and each category
 To evaluate the performance of each model, we used the ROC AUC score, also take into account the confusion matrix since the data is highly imbalanced.
 ### Challenges
 1. feature engineering - when plotting the distribution, most of the features barely show any difference between click and nonclick groups. (add most of the features, observe the baseline model's feature importance to take out unimportant features (e.g. hour, occupation, pvalue_level, etc) ) 
-2. Sparsed matrix - Except for the price, all the features are categorical. (create dummy variable for selected feature and read each line as dictionary so that only the col with 1 is saved to reduce the memory requirement)
+2. Sparsed matrix - Except for the price, all the features are categorical. (create dummy variable for selected feature and read each line as dictionary so that only the col with 1 is saved to reduce the memory requirement.
 3. Imbalanced data - the ratio of positive and negative labels is 5% to 95%, meaning 5% click in total. It requires us to manually generate fairly balanced data for model training and use the original imbalanced data for model test.
 
 ## Reference
